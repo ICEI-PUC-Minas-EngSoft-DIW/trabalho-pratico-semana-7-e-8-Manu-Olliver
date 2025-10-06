@@ -10,12 +10,13 @@ body {
 }
 
 header, footer {
-  background-color: #ffc0cb !important; /* rosa */
+  background-color: #ffc0cb !important; 
   color: #000;
 }
 
 .navbar {
   font-weight: bold;
+  background-color: #fceaea !important;
 }
 .navbar a {
   color: #222 !important;
@@ -32,6 +33,8 @@ header, footer {
   font-size: 1.5rem;
   color: #555;
 }
+
+
 .card {
   display: flex;            
   flex-direction: row;      
@@ -39,28 +42,19 @@ header, footer {
   margin: 10px;
   padding: 10px;
   box-sizing: border-box;
+  border: 1px solid #ffe4e1;
+  transition: transform 0.3s ease;
 }
 
-
-form {
-  display: block;
-  margin-top: 10px;
-}
-
-
-aside {
-  position: relative; 
-}
-
-
-.row-cols-md-2 > .col {
-  display: flex;
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 192, 203, 0.3);
 }
 
 .card img {
   width: 120px;            
-  height: auto;            
-  object-fit: contain;       
+  height: 120px;            
+  object-fit: cover;       
   margin-right: 15px;        
   border-radius: 8px;
 }
@@ -69,3 +63,40 @@ aside {
   flex: 1; 
 }
 
+
+form {
+  display: block;
+  margin-top: 10px;
+}
+
+.btn-outline-dark {
+  border-color: #666;
+  color: #666;
+}
+
+.btn-outline-dark:hover {
+  background-color: #666;
+  border-color: #666;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #ffc0cb;
+  border-color: #ffc0cb;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #ffb6c1;
+  border-color: #ffb6c1;
+  color: #000;
+}
+
+
+aside {
+  position: relative; 
+}
+
+.row-cols-md-2 > .col {
+  display: flex;
+}
